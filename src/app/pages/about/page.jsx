@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import React from "react";
+import Card from "@/app/Components/card/card.tsx";
+import styles from "./page.module.css";
 
 const AboutPage = () => {
   return (
-    <div className="items-center justify-center p-8">
-      <h1>oi</h1>
+    <div className={styles.container}>
+      <Card />
     </div>
   );
 };
