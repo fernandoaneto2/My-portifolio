@@ -4,22 +4,23 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import ResponsiveLoader from "@/app/Components/responsive-design/responsive";
+import style from "./card.module.css";
 
 const Card = () => {
   return (
-    <StyledWrapper>
-      <div className="card">
-        <div className="img"></div>
+    <div className={style.main}>
+      <div className={style.card}>
+        <div className={style.img}></div>
         <span>About Me</span>
-        <p className="info">I’m Fernando,</p>
-        <div className="share">
+        <p className={style.info}>I’m Fernando,</p>
+        <div className={style.share}>
           <Link href="https://github.com/fernandoaneto2" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={40}
               height={40}
               fill="currentColor"
-              className="bi bi-github"
+              className={style.bi}
               viewBox="0 0 16 16"
             >
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -62,124 +63,18 @@ const Card = () => {
             </svg>
           </Link>
         </div>
-        <button>Resume</button>
+
+        <Link
+          className={style.link}
+          href="https://1drv.ms/w/c/d364a4e770998e83/ERiBA7IUMTxPv30wFpOx2xMBsm1YAVH5TEiOg5ee8eE3lg?e=Vom5rg"
+          target="_blank"
+        >
+          {" "}
+          <button>Resume</button>
+        </Link>
       </div>
-    </StyledWrapper>
+    </div>
   );
 };
-
-const StyledWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-
-  .card {
-    width: 90vw;
-    height: 90vh;
-    max-width: 80em; /* Evita que o card fique grande demais em telas enormes */
-    max-height: 50em;
-    min-width: 20em; /* Mantém um tamanho mínimo */
-    min-height: 30em;
-    background: #262626;
-    transition: 1s ease-in-out;
-    clip-path: polygon(
-      30px 0%,
-      100% 0,
-      100% calc(100% - 30px),
-      calc(100% - 30px) 100%,
-      0 100%,
-      0% 30px
-    );
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .card span {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    font-size: 3vw; /* Tamanho ajustável conforme a tela */
-  }
-
-  .card .info {
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    font-size: 2vw;
-    margin: 2vh;
-  }
-
-  .card .img {
-    width: min(12vw, 6em); /* Ajustável sem ultrapassar 6em */
-    height: min(12vw, 6em);
-    background: white;
-    border-radius: 15px;
-    margin: auto;
-  }
-
-  .card .share {
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-  }
-
-  .card a {
-    color: white;
-    transition: 0.4s ease-in-out;
-    font-size: 2vw;
-  }
-
-  .card a:hover {
-    color: #10b981;
-  }
-
-  .card button {
-    padding: 1.2vh 2.5vw;
-    font-size: 2vw;
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    transition: 0.4s ease-in-out;
-  }
-
-  .card button:hover {
-    background: #10b981;
-    color: white;
-    cursor: pointer;
-  }
-
-  /* Responsividade para telas menores */
-  @media (max-width: 768px) {
-    .card {
-      width: 90vw;
-      height: 90vh;
-      min-height: 30vh;
-      padding: 1.5rem;
-    }
-
-    .card span {
-      font-size: 5vw;
-    }
-
-    .card .info {
-      font-size: 3.5vw;
-    }
-
-    .card button {
-      font-size: 3.5vw;
-      padding: 1rem 2rem;
-    }
-  }
-`;
 
 export default Card;

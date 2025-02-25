@@ -1,9 +1,15 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import Form from "@/app/Components/form/form";
+import styles from "./page.module.css";
 
 const ContactPage = () => {
-  return <div className="items-center justify-center p-8"></div>;
+  return (
+    <div className={styles.container}>
+      <div className="flex flex-col items-center justify-center p-14">
+        <Form />
+      </div>
+    </div>
+  );
 };
 
 export default ContactPage;

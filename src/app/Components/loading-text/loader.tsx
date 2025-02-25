@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loader = () => {
+const LoaderText = () => {
   return (
     <div className="loader">
       <span className="loader-text">Loading...</span>
@@ -8,4 +8,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default LoaderText;
