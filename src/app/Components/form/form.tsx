@@ -6,6 +6,10 @@ const Form = () => {
   return (
     <div className={style.main}>
       <div className={style.form_container}>
+        <h1 className="flex items-center justify-center font-bold text-neutral-500 text-xl">
+          Text to me
+        </h1>
+
         <form
           className={style.form}
           onSubmit={(e) => {
