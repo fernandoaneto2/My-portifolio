@@ -122,7 +122,7 @@
     max-width: 1000px;
   }
   .form_container .form_group textarea {
-    max-height: 100vh;
+    max-height: 60vh;
   }
 }
 

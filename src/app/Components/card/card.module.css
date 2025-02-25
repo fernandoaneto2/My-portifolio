@@ -41,17 +41,26 @@
 .card .info {
   font-weight: 400;
   color: white;
-  text-align: center;
+  text-align: justify;
   font-size: 2vw;
   margin: 2vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.card .img {
+.card .border_img {
   width: min(12vw, 6em); /* Ajustável sem ultrapassar 6em */
-  height: min(12vw, 6em);
-  background: white;
+  height: min(10vw, 6em);
+
   border-radius: 15px;
   margin: auto;
+}
+.img {
+  border: 2px solid white;
+  border-radius: 100px;
 }
 
 .card .share {
