@@ -19,7 +19,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Link } from "lucide-react";
+
+import fotodeperfil from "../../../../public/fotoperfil.png";
+
+import Image from "next/image";
+import Link from "next/link";
 
 const ProjectsPage = () => {
   return (
@@ -33,20 +37,29 @@ const ProjectsPage = () => {
               <div className="p-2">
                 <Card className="shadow-lg">
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
+                    <span className="text-4xl font-semibold">
+                      <h1 className="flex flex-col justify-between items-center box-border py-4">
+                        Titulo do Projeto
+                      </h1>
+                      <Image
+                        src={fotodeperfil}
+                        alt="Foto do Projeto"
+                        width={250}
+                        height={250}
+                        className="rounded-2xl"
+                      />
+                    </span>
                   </CardContent>
 
                   <CardFooter className="flex justify-between">
-                    <Link
-                      href="https://github.com/fernandoaneto2"
-                      className=""
-                      target="_blank"
-                    >
-                      GitHub
-                      <Button variant="outline"></Button>
+                    <Link href="/" target="_blank">
+                      <Button variant="outline" asChild>
+                        <span>GitHub</span>
+                      </Button>
                     </Link>
-
-                    <Button>Deploy</Button>
+                    <Link href="/" target="_blank">
+                      <Button>Deploy</Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               </div>
