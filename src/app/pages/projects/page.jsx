@@ -11,19 +11,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import fotodeperfil from "../../../../public/fotoperfil.png";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 import Image from "next/image";
 import Link from "next/link";
+
+import projects from "@/arrayProjects";
 
 const ProjectsPage = () => {
   return (
@@ -32,32 +25,28 @@ const ProjectsPage = () => {
     >
       <Carousel className="w-3/4 max-w-lg">
         <CarouselContent className="flex">
-          {Array.from({ length: 3 }).map((_, index) => (
+          {projects.map((project, index) => (
             <CarouselItem key={index} className="w-3/4 md:w-1/2 lg:w-1/3">
               <div className="p-2">
                 <Card className="shadow-lg">
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">
-                      <h1 className="flex flex-col justify-between items-center box-border py-4">
-                        Titulo do Projeto
-                      </h1>
-                      <Image
-                        src={fotodeperfil}
-                        alt="Foto do Projeto"
-                        width={250}
-                        height={250}
-                        className="rounded-2xl"
-                      />
-                    </span>
+                  <CardContent className="flex flex-col items-center justify-center p-6">
+                    <h1 className="text-xl font-semibold text-center mb-4">
+                      {project.title}
+                    </h1>
+                    <Image
+                      src={project.image}
+                      alt={`Imagem do ${project.title}`}
+                      width={370}
+                      height={50}
+                      className="rounded-2xl"
+                    />
                   </CardContent>
 
                   <CardFooter className="flex justify-between">
-                    <Link href="/" target="_blank">
-                      <Button variant="outline" asChild>
-                        <span>GitHub</span>
-                      </Button>
+                    <Link href={project.github} target="_blank">
+                      <Button variant="outline">GitHub</Button>
                     </Link>
-                    <Link href="/" target="_blank">
+                    <Link href={project.deploy} target="_blank">
                       <Button>Deploy</Button>
                     </Link>
                   </CardFooter>
