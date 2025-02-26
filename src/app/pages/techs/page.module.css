@@ -1,8 +1,13 @@
 .container {
   /* Background */
   /* Basic dimensions and centering */
+  max-width: 100%;
   width: 100%;
   height: 100vh;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
