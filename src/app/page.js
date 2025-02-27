@@ -18,10 +18,7 @@ const HomePage = () => {
       />
 
       <LoaderText />
-
-      <p className="flex font-bold text-xl">
-        Here you'll learn a bit about me.
-      </p>
+      <div></div>
     </div>
   );
 };
