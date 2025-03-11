@@ -22,6 +22,12 @@ const projects = [
     deploy: "https://projeto3.com",
   },
   {
+    title: "Chatgpt - clone",
+    image: "/project-chat.png",
+    github: "https://github.com/fernandoaneto2/chatgpt-clone",
+    deploy: "",
+  },
+  {
     title: "Guesthouse - Website",
     image: "/project-guesthouse-image.png",
     github: "https://github.com/fernandoaneto2/PousadaSecreta",
@@ -32,12 +38,6 @@ const projects = [
     image: "/project-coffee-image.png",
     github: "https://github.com/fernandoaneto2/Site-Cafeteria",
     deploy: "https://site-cafeteria-delta.vercel.app/",
-  },
-  {
-    title: "Chatgpt - clone",
-    image: "/project-chat.png",
-    github: "https://github.com/fernandoaneto2/chatgpt-clone",
-    deploy: "",
   },
 ];
 
