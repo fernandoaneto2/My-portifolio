@@ -16,9 +16,9 @@ const HomePage = () => {
         height={200}
         className="w-64 h-64 rounded-full border-4 shadow-emerald-500 shadow-2xl border-neutral-700 object-cover"
       />
-
-      <LoaderText />
-      <div></div>
+      <div className="flex flex-row p-4">
+        <LoaderText />
+      </div>
     </div>
   );
 };

@@ -29,7 +29,7 @@
 
 .loader_text:nth-child(2) {
   animation: typewriter2 2s steps(30) 2.5s 1 normal both,
-    blink 0.5s steps(10) 5s infinite;
+    blink 0.5s steps(10) 4.5s infinite;
 }
 
 .hidden {
