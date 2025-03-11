@@ -33,6 +33,12 @@ const projects = [
     github: "https://github.com/fernandoaneto2/Site-Cafeteria",
     deploy: "https://site-cafeteria-delta.vercel.app/",
   },
+  {
+    title: "Chatgpt - clone",
+    image: "/project-chat.png",
+    github: "https://github.com/fernandoaneto2/chatgpt-clone",
+    deploy: "",
+  },
 ];
 
 export default projects;
