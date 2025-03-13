@@ -28,6 +28,13 @@ const projects = [
     deploy: "",
   },
   {
+    title: "Ice cream shop - Website",
+    image: "/project-iceCreamShop.png",
+    github: "https://github.com/fernandoaneto2/site-sorveteria",
+    deploy:
+      "https://site-sorveteria-re8yzpa4k-fernandoaneto2s-projects.vercel.app/",
+  },
+  {
     title: "Guesthouse - Website",
     image: "/project-guesthouse-image.png",
     github: "https://github.com/fernandoaneto2/PousadaSecreta",
