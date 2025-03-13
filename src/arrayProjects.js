@@ -1,5 +1,5 @@
 // Imagens
-import Spotify from "../public/project-spotify-image.png";
+// import Spotify from "../public/project-spotify-image.png";
 // Array dos projetos
 
 const projects = [
@@ -26,6 +26,12 @@ const projects = [
     image: "/project-chat.png",
     github: "https://github.com/fernandoaneto2/chatgpt-clone",
     deploy: "",
+  },
+  {
+    title: "Random Number Generator",
+    image: "/project-random-number.png",
+    github: "https://github.com/fernandoaneto2/random-number",
+    deploy: "https://random-number-six.vercel.app/",
   },
   {
     title: "Ice cream shop - Website",
