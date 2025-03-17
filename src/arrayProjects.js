@@ -34,6 +34,12 @@ const projects = [
     deploy: "https://random-number-six.vercel.app/",
   },
   {
+    title: "Agency Design - Website",
+    image: "/project-agency-website.png",
+    github: "https://github.com/fernandoaneto2/Agency-website",
+    deploy: "https://agency-website-plum-three.vercel.app/",
+  },
+  {
     title: "Ice cream shop - Website",
     image: "/project-iceCreamShop.png",
     github: "https://github.com/fernandoaneto2/site-sorveteria",
