@@ -28,6 +28,12 @@ const projects = [
     deploy: "",
   },
   {
+    title: "Menu - Restaurant",
+    image: "/project-menu-restaurant.png",
+    github: "https://github.com/fernandoaneto2/cardapio-restaurante",
+    deploy: "https://cardapio-restaurante-4bta.vercel.app/",
+  },
+  {
     title: "Random Number Generator",
     image: "/project-random-number.png",
     github: "https://github.com/fernandoaneto2/random-number",
