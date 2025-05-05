@@ -40,6 +40,18 @@ const projects = [
     deploy: "https://random-number-six.vercel.app/",
   },
   {
+    title: "Dentist web - Website",
+    image: "/project-dentist-lp.png",
+    github: "https://github.com/fernandoaneto2/dentist-lp",
+    deploy: "https://dentist-lp-sigma.vercel.app/",
+  },
+  {
+    title: "Agency - Website",
+    image: "/project-agency.png",
+    github: "https://github.com/fernandoaneto2/lp-template",
+    deploy: "https://lp-template-two.vercel.app/",
+  },
+  {
     title: "Agency Design - Website",
     image: "/project-agency-website.png",
     github: "https://github.com/fernandoaneto2/Agency-website",
